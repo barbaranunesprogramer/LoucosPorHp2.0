@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>LoucosPorHP2.0</title>
+</head>
+
+<body>
+
+    <header class="cabeçalho">
+        <h1 class="cabeçalho__titulo">Loucos Por Harry Potter</h1>
+        <p class="cabeçalho__texto"> "Palavras são, na minha humilde opinião, nossa inesgotável fonte de magia, Capazes de formar grandes</p>
+        <p class="cabeçalho__texto">  sofrimentos  e também de remediá-los"-Albus Percival Wulfric Brian Dumbledore</p>
+        <h2 class="cabeçalho__subtitulo"> Juro Solenemente não fazer nada de bom !</h2>
+
+    </header>
+    <main class="formulario">
+        <section class="corpo">
+
+            <form class="formulario__formulario" action="https://formsubmit.co/barbara-elen@hotmail.com" method="POST">
+
+                <p class="fomulario__titulo">Vamos nos conhecer melhor ?</p>
+                
+<p class="fomulario__subtitulo">Nome:</p>
+<input type="text" name="nome" placeholder="digite seu nome" class="fomulario__input">
+<p class="fomulario__subtitulo">Idade:</p>
+<input type="number" name="idade" placeholder="digite sua idade" class="fomulario__input">
+
+                <p class="fomulario__titulo"> Qual seu Personagem Favorito ?</p>
+                <input type="text" name="livro" placeholder="Qual seu Personagem favorito?" class="fomulario__input">
+                
+                <p class="fomulario__titulo">Qual casa voce pertence?</p>
+                <ul>
+                    <li class="formulario__personagem_morte"><input type="radio" name="casa" value="Grifinoria" />
+                        Grifinória </li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="casa" value="Sonserina" />
+                        Sonserina </li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="casa" value="Corvinal" />
+                        Corvinal</li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="casa" value="Lufa-Lufa" />
+                        Lufa-Lufa </li>
+                </ul>
+                <p class="fomulario__titulo">Pior morte da saga ? ?</p>
+                <ul class="formulario__personagem">
+
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="Dumbledore" />
+                        Dumbledore </li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="Snape" />
+                        Severo Snape</li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="Dobby" /> Dobby
+                    </li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="SiriusBlack" />
+                        Sirius Black </li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="wesley" />
+                        Fredy Wesley</li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="Cedrico" />
+                        Cedrico Diggory</li>
+                    <li class="formulario__personagem_morte"><input type="radio" name="morte" value="Remo" /> Remo
+                        Lupin </li>
+                </ul>
+            </section>
+            <section class = "formulario__continuação">
+                <p class="fomulario__titulo"> Qual seu livro Favorito ?</p>
+                <input type="text" name="livro"
+                        placeholder="Qual seu livro favorito?" class="fomulario__input">
+                <p class="fomulario__titulo"> Qual seu filmeFavorito ?</p>
+                <input type="text" name="filme"
+                        placeholder="Qual seu filme favorito?" class="fomulario__input">
+
+                        <section class ="vilao">
+                        </ul>
+                        <p class="fomulario__titulo">Maior Vilão ( depois de você-sabe-quem)</p>
+                        <ul class="formulario__personagem__vilao">
+        
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value="Lucius Malfoy" />
+                                Lucius Malfoy</li>
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value="Snape" />
+                                Severo Snape</li>
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value="Bellatrix" /> Bellatrix Lestrange
+                            </li>
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value="Dolores Umbride" />
+                                Dolores Umbride </li>
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value="Pedro Pettigrew (rabicho)" />Pedro Pettigrew (rabicho)</li>
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value=" Tia Petunia" />
+                                Tia Petúnia Dursley</li>
+                            <li class="formulario__personagem_vilao"><input type="radio" name="vilao" value="Bartolomeu " /> Bartolomeu Crouch Jr.</li>
+                        </ul>
+
+        
+        
+                        </section>
+
+                <p class="fomulario__titulo">Descreva o que mais gosta da saga Harry Potter ?</p>
+                <input type="text"
+                        name="anotação" placeholder="o que você mais gosta ?" class="fomulario__input">
+                <section class="click__botao">
+                    <button onclick="clickNoBotao()" class="botao" type="submit" data-button="">mal feito,
+                        feito!</button>
+                </section>
+                
+
+            </form>
+            <a href="https://portifoliobarbara.vercel.app/" class = "botao__a"> Click e conheça um pouco sobre mim</a>
+
+    </main>
+
+    <hr />
+    <footer>
+        <h2 class="rodape"> Formulario produzido por Bárbara Nunes Programer - e-mail :barbaranunesprogramer@hotmail.com</h2>
+    </footer>
+    <script>
+        function clickNoBotao() {
+            // Exibe um alert com a mensagem desejada
+            alert('Formulário enviado para Hogwarts!');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+:root{
+    --cor-primaria:#6b9795;
+    --cor-secundaria:#decba0;
+    --cor-terciaria:#6e1538;
+    --cor-quatro:#a0ab94;
+    --cor-cinco:#481800;
+    --branco:#ffffff;
+    --preto:#000000;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("fundo.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    align-items: center;
+    color:var(--cor-secundaria);
+    font-size: 20px;
+    font-weight: 400;
+    height: 0.5px;
+}
+
+.cabeçalho{
+    display: flex;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding : 1em 0.5em;
+}
+.cabeçalho__titulo{
+    font-size: 60px;
+    padding:0  0.5em ;
+    font-weight: 700;
+    background-color: var(--branco);
+    color:var(--preto)
+}
+.cabeçalho__texto{
+    color: var(--cor-primaria);
+    padding: 0.2em;
+    font-size: 30px;
+}
+.cabeçalho__subtitulo {
+    display: flex;
+    align-items: flex-end;
+}
+.fomulario__titulo{
+    color:var(--branco);
+    background-color: #000000;
+    margin:2px;
+}
+.formulario{
+    color:var(--branco);
+    display: flex;
+    text-align:left;
+    justify-content:space-around;
+    margin: 2px;
+  
+
+}
+.formulario__personagem_morte,.formulario__personagem_vilao{
+    list-style: none;
+}
+.formulario__formulario{
+    color:var(--branco);
+    display: grid;
+    margin :2px;
+    padding: 5px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+   
+}
+.corpo{
+
+    margin: 2px;;
+    
+}
+.fomulario__input {
+    margin: 10px 0;
+    text-align: left;
+    width: 90%;
+    background-color: #a0ab94;
+    color: var(--branco);
+    font-size: 20px;
+    border-radius: 5px;
+   
+    
+}
+.fomulario__input::placeholder {
+    color:var(--preto);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #a0ab94;
+    color: var(--cor-cinco);
+}
+
+.click__botao{
+    display: flex;
+    align-items: center;
+}
+.botao{
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+   margin:20px;
+    padding: 2px;
+    
+
+    
+}
+.botao:hover{
+    color:aqua;
+    background: blue;
+
+
+}
+.botao__a{
+    height: 40px;
+    width: 200px;
+    background: #2b22ce;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+   margin:20px;
+    padding: 2px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.botao__a:hover{
+    color:rgb(51, 20, 210);
+    background: rgb(207, 231, 30);
+
+}
+
+hr{
+    margin: 0;
+}
+.rodape{
+    display: flex;
+    background-color: var(--cor-quatro);
+    padding: 1em;
+    color:var(--preto);
+    font-weight: 600;
+    font-size: 15px;
+    justify-content:center;
+    align-items: center;
+    
+}
+@media screen and (max-width :1024px){
+    body{
+        color:var(--branco);
+        background-color: var(--cor-primaria);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        background-image: none;
+
+    }
+    .cabeçalho, .cabeçalho__titulo,.cabeçalho__texto,.cabeçalho__subtitulo {
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+    }
+    .cabeçalho__texto{
+        align-items: center;
+        font-size:15px;
+    }
+    .formulario__formulario{
+        display: block;
+        margin:15px;
+    }
+    .formulario{
+    display: block;
+    }
+    .fomulario__titulo{
+        color:var(--branco);
+    background-color: #500dcd61;
+    margin: 0;
+    }
+    .formulario__continuação{
+        margin: 15px;
+    }
+}
